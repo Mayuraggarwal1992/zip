@@ -1,0 +1,23 @@
+eG1scG9saWN5PTw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9IlVURi04Ij8+DQo8UG9saWN5IG5hbWU9IlNlbGZXcml0ZUF0dHJpYnV0ZXMiIGNyZWF0ZWRieT0iY249ZHNhbWV1c2VyLG91PURTQU1FIFVzZXJzLGRjPXNreWRlbnRpdHksZGM9Y29tIiBsYXN0bW9kaWZpZWRieT0iY249ZHNhbWV1c2VyLG91PURTQU1FIFVzZXJzLGRjPXNreWRlbnRpdHksZGM9Y29tIiBjcmVhdGlvbmRhdGU9IjE0ODExOTAxNDAyODgiIGxhc3Rtb2RpZmllZGRhdGU9IjE0ODExOTAxNDAyODgiIHJlZmVycmFsUG9saWN5PSJmYWxzZSIgYWN0aXZlPSJ0cnVlIiA+DQo8UnVsZSBuYW1lPSJ1c2VyLXJlYWQtcnVsZSI+DQo8U2VydmljZU5hbWUgbmFtZT0ic3VuQU1EZWxlZ2F0aW9uU2VydmljZSIgLz4NCjxSZXNvdXJjZU5hbWUgbmFtZT0ic21zOi8vKmRjPXNreWRlbnRpdHksZGM9Y29tL3N1bklkZW50aXR5UmVwb3NpdG9yeVNlcnZpY2UvMS4wL2FwcGxpY2F0aW9uLyoiIC8+DQo8QXR0cmlidXRlVmFsdWVQYWlyPg0KPEF0dHJpYnV0ZSBuYW1lPSJNT0RJRlkiIC8+DQo8VmFsdWU+YWxsb3c8L1ZhbHVlPg0KPC9BdHRyaWJ1dGVWYWx1ZVBhaXI+DQo8L1J1bGU+DQo8U3ViamVjdHMgbmFtZT0iU3ViamVjdHMiIGRlc2NyaXB0aW9uPSIiPg0KPFN1YmplY3QgbmFtZT0iZGVsZWdhdGlvbi1zdWJqZWN0IiB0eXBlPSJBdXRoZW50aWNhdGVkVXNlcnMiIGluY2x1ZGVUeXBlPSJpbmNsdXNpdmUiPg0KPC9TdWJqZWN0Pg0KPC9TdWJqZWN0cz4NCjxDb25kaXRpb25zIG5hbWU9IkF0dHJDb25kaXRpb24iIGRlc2NyaXB0aW9uPSIiPg0KPENvbmRpdGlvbiBuYW1lPSJjb25kaXRpb24iIHR5cGU9IlVzZXJTZWxmQ2hlY2tDb25kaXRpb24iPg0KPEF0dHJpYnV0ZVZhbHVlUGFpcj48QXR0cmlidXRlIG5hbWU9ImF0dHJpYnV0ZXMiLz48VmFsdWU+Z2l2ZW5uYW1lPC9WYWx1ZT48VmFsdWU+c248L1ZhbHVlPjxWYWx1ZT5jbjwvVmFsdWU+PFZhbHVlPnVzZXJwYXNzd29yZDwvVmFsdWU+PFZhbHVlPm1haWw8L1ZhbHVlPjxWYWx1ZT50ZWxlcGhvbmVudW1iZXI8L1ZhbHVlPjxWYWx1ZT5wb3N0YWxhZGRyZXNzPC9WYWx1ZT48VmFsdWU+cHJlZmVycmVkbG9jYWxlPC9WYWx1ZT48VmFsdWU+aXBsYW5ldC1hbS11c2VyLXBhc3N3b3JkLXJlc2V0LW9wdGlvbnM8L1ZhbHVlPjxWYWx1ZT5pcGxhbmV0LWFtLXVzZXItcGFzc3dvcmQtcmVzZXQtcXVlc3Rpb24tYW5zd2VyPC9WYWx1ZT48VmFsdWU+ZGVzY3JpcHRpb248L1ZhbHVlPjxWYWx1ZT5vYXRoMmZhRW5hYmxlZDwvVmFsdWU+PFZhbHVlPnN1bklkZW50aXR5U2VydmVyRGV2aWNlS2V5VmFsdWU8L1ZhbHVlPjxWYWx1ZT5zdW5JZGVudGl0eVNlcnZlckRldmljZVN0YXR1czwvVmFsdWU+DQo8L0F0dHJpYnV0ZVZhbHVlUGFpcj4NCjwvQ29uZGl0aW9uPg0KPC9Db25kaXRpb25zPg0KPC9Qb2xpY3k+
+
+xmlpolicy=<?xml version="1.0" encoding="UTF-8"?>
+<Policy name="SelfWriteAttributes" createdby="cn=dsameuser,ou=DSAME Users,dc=skydentity,dc=com" lastmodifiedby="cn=dsameuser,ou=DSAME Users,dc=skydentity,dc=com" creationdate="1481190140288" lastmodifieddate="1481190140288" referralPolicy="false" active="true" >
+<Rule name="user-read-rule">
+<ServiceName name="sunAMDelegationService" />
+<ResourceName name="sms://*dc=skydentity,dc=com/sunIdentityRepositoryService/1.0/application/*" />
+<AttributeValuePair>
+<Attribute name="MODIFY" />
+<Value>allow</Value>
+</AttributeValuePair>
+</Rule>
+<Subjects name="Subjects" description="">
+<Subject name="delegation-subject" type="AuthenticatedUsers" includeType="inclusive">
+</Subject>
+</Subjects>
+<Conditions name="AttrCondition" description="">
+<Condition name="condition" type="UserSelfCheckCondition">
+<AttributeValuePair><Attribute name="attributes"/><Value>givenname</Value><Value>sn</Value><Value>cn</Value><Value>userpassword</Value><Value>mail</Value><Value>telephonenumber</Value><Value>postaladdress</Value><Value>preferredlocale</Value><Value>iplanet-am-user-password-reset-options</Value><Value>iplanet-am-user-password-reset-question-answer</Value><Value>description</Value><Value>oath2faEnabled</Value><Value>sunIdentityServerDeviceKeyValue</Value><Value>sunIdentityServerDeviceStatus</Value>
+</AttributeValuePair>
+</Condition>
+</Conditions>
+</Policy>
